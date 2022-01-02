@@ -81,7 +81,7 @@ CREATE TABLE order_line (
     ol_number INTEGER NOT NULL,
     ol_quantity INTEGER NOT NULL,
     ol_amount NUMERIC(6,2),
-    ol_dist_info character(24),
+    ol_dist_info TEXT,
 
     CONSTRAINT order_line_i1 PRIMARY KEY (ol_w_id, ol_d_id, ol_o_id, ol_number)
 );
